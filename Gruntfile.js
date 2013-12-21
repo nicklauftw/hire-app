@@ -251,7 +251,8 @@ module.exports = function(grunt) {
           cwd: '<%= folders.app %>',
           dest: '<%= folders.tmp %>',
           src: [
-            'styles/{,*/}*css'
+            'styles/{,*/}*css',
+            'bower_components/**/*.css'
           ]
         }]
       },
