@@ -85,6 +85,10 @@
   }
 }
 
+@media (max-width: 480px) {
+  .stat-block { min-height: 115px; }
+}
+
 // Modal
 #overlay {
   width: 100%;
