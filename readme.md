@@ -1,0 +1,1 @@
+This is a static design concept for a dashboard UI of an HR applicant tracking app. Built using Yeoman Jade generator and bits of the YUI Pure CSS library.

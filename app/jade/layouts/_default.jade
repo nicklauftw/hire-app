@@ -1,0 +1,14 @@
+!!! 5
+//if IE 8
+    <html class="lt-ie9">
+// [if gt IE 8] <!
+html(lang="en")
+  block vars
+  // <![endif]
+  include default-partials/_html-header
+
+  body(class=page)
+    #layout
+      include _sidemenu
+      block content
+      include default-partials/_footer

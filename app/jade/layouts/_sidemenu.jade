@@ -1,0 +1,25 @@
+a#menuLink.pure-menu-link(href='#menu')
+  span
+#menu
+  .pure-menu.pure-menu-open
+    a(class="pure-menu-heading", href="/")
+      i(class="fa fa-flask")
+    ul
+      li
+        a(href="#", class=(page === "dashboard" ? 'active-page' : 'nope'))
+          i(class="fa fa-dashboard") &nbsp; Dashboard
+      li
+        a(href="#")
+          i(class="fa fa-users") &nbsp; Applicants
+      li
+        a(href="#")
+          i(class="fa fa-suitcase") &nbsp; Job Postings
+      li
+        a(href="#")
+          i(class="fa fa-tasks") &nbsp; Tasks
+      li
+        a(href="#")
+          i(class="fa fa-cog") &nbsp; Settings
+      li
+        a(href="#")
+          i(class="fa fa-sign-out") &nbsp; Log Out

@@ -1,0 +1,119 @@
+// @import '/bower_components/pure/pure-min.css';
+@import 'variables';
+@import '/bower_components/pure/base-min.css';
+@import '/bower_components/pure/buttons-min.css';
+@import '/bower_components/pure/grids-min.css';
+@import '/bower_components/pure/menus-min.css';
+@import 'side-menu';
+
+#main { max-width: 800px; }
+
+.pure-button {
+  background-color: $gray-light;
+  border-radius: 5px;
+}
+
+.heading {
+  position: relative;
+  margin-top: 50px;
+  .pure-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+#menu {
+  .active-page { background-color: $white; }
+}
+
+.dash-panel {
+  padding-bottom: 25px;
+  border-bottom: 1px $gray dotted;
+  ul {
+    padding: 0 0 0 15px;
+    margin: 25px 0;
+  }
+  li {
+    margin: 15px 0;
+    list-style: none;
+  }
+  li:before {
+    font-family: FontAwesome;
+    font-size: 14px;
+    color: $orange;
+    padding-right: 10px;
+  }
+}
+
+.dash-panel:last-child { border: none; }
+
+.list-applicant-activity {
+  li:before {
+    content: "\f007";
+  }
+}
+
+.list-active-jobs {
+  li:before {
+    content: "\f0f2";
+  }
+}
+
+// Stat Blocks
+.stat-block {
+  border: 1px solid $gray-light;
+  text-align: center;
+  padding: 15px 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  h3 {
+    color: $green;
+    margin: 0 0 5px;
+  }
+}
+.stat-block:first-child {
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+}
+.stat-block:last-child {
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+}
+
+// Responsive Adjustments
+@media (max-width: 767px) {
+  #main {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+// Modal
+#overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: rgba(0,0,0,.8);
+  z-index: 9998;
+}
+
+#modal {
+  width: 100%;
+  max-width: 420px;
+  height: 160px;
+  position: fixed;
+  margin: auto;
+  padding: 0 20px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: $white;
+  z-index: 9999;
+  border-radius: 6px;
+  h3 { color: $green; }
+}
